@@ -9,6 +9,8 @@ The dataset used in this project is sourced from Kaggle and comprises 10,000 row
 #  Data Dictionary:
 # Column Name:
 | RowNumber || CustomerId || Surname || CreditScore || Geography || Age | | Tenure | | Balance | | NumOfProducts || HasCrCard || IsActiveMember || EstimatedSalary || Exited ||
+![image](https://github.com/user-attachments/assets/cfd5c2f9-8f18-42a7-9844-e3e8b8203915)
+
 
 # Scope:
 By leveraging this dataset and employing appropriate data science techniques, the project aims to build a predictive model that can accurately identify customers likely to churn, enabling the bank to implement targeted retention strategies and ultimately improve customer loyalty and business performance.
