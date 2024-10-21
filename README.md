@@ -49,13 +49,7 @@ To run this project locally, follow the steps below:
     cd customer-churn-prediction
     ```
 
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-    **Note**: Ensure that `numpy`, `pandas`, `matplotlib`, and `seaborn` are installed.
-
-4. Open the Jupyter notebook:
+3. Open the Jupyter notebook:
     ```bash
     jupyter notebook Customer\ Churn\ Prediction.ipynb
     ```
@@ -80,21 +74,15 @@ The performance of these models is evaluated based on accuracy, precision, recal
 
 ### Results
 
-The best-performing model is chosen based on evaluation metrics. Detailed visualizations, confusion matrices, and feature importance plots are included in the notebook to provide insights into model performance.
+- The best-performing model is chosen based on evaluation metrics. Detailed visualizations, confusion matrices, and feature importance plots are included in the notebook to provide insights into model performance.
+<img src="https://github.com/user-attachments/assets/e7e66ed4-0ca7-4198-9de3-67af484a54ec" alt="Chart 1" width="400">
+<img src="https://github.com/user-attachments/assets/5be468a9-10f7-4274-a8bb-ae2ad5e31ee3" alt="Chart 2" width="600">
+
 
 ### Conclusion
 
 This project demonstrates how customer churn prediction can be tackled using machine learning. With the right data, banks can take informed steps to reduce churn rates and retain customers.
 
-## License
-
-This project is licensed under the MIT License.
-
 ## Contributions
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you find any bugs or have suggestions for improvements.
-
-## References
-
-- [Kaggle Churn Dataset](https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers?datasetId=797699&sortBy=voteCount)
-- Various machine learning libraries like `scikit-learn` and `pandas`.
