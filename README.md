@@ -1,18 +1,100 @@
-# Customer Churn-Prediction-Model
 
-# Project Overview:
-The main objective of the Bank Customer Churn Prediction project is to analyze the demographics and financial information of bank customers, including factors like age, gender, credit score, country, balance, and more, in order to predict whether a customer will leave the bank or not. Customer churn, the decision of customers to leave a bank, can significantly impact the bank's business and profitability. By accurately predicting customer churn, the bank can take proactive measures to retain valuable customers and enhance customer satisfaction.
+# Customer Churn Prediction
 
-# About the Dataset:
-The dataset used in this project is sourced from Kaggle and comprises 10,000 rows and 14 columns. The dataset's primary objective is to predict whether a customer will churn (leave the bank) based on their demographics and financial information.The dataset contains several independent variables, which are potential factors that may influence a customer's decision to leave the bank. These variables include customer-specific information like credit score, country (geography), age, tenure (number of years with the bank), bank balance, the number of bank products utilized (NumOfProducts), whether the customer holds a credit card (HasCrCard), and whether the customer is an active member with the bank (IsActiveMember). The target variable, also known as the dependent variable, is labeled "Exited" and is represented by a binary flag: 1 if the customer closed their account with the bank and 0 if the customer is retained.
+This project focuses on predicting **customer churn** for a bank using machine learning techniques. The dataset contains various features such as customer demographics, account information, and transaction history, which are used to predict whether a customer will leave the bank.
 
-#  Data Dictionary:
-# Column Name:
-| RowNumber || CustomerId || Surname || CreditScore || Geography || Age | | Tenure | | Balance | | NumOfProducts || HasCrCard || IsActiveMember || EstimatedSalary || Exited ||
+## Project Overview
 
+Customer churn prediction is a common problem in banking, where identifying customers who are likely to leave can help banks take proactive measures to retain them. In this project, we build a machine learning model to predict whether a customer will churn based on the available demographic and financial data.
 
-![image](https://github.com/user-attachments/assets/cfd5c2f9-8f18-42a7-9844-e3e8b8203915)
+### Dataset
 
+The dataset used for this project is sourced from [Kaggle](https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers?datasetId=797699&sortBy=voteCount), consisting of 10,000 rows and 14 columns. The target variable is `Exited`, which indicates whether the customer has left the bank.
 
-# Scope:
-By leveraging this dataset and employing appropriate data science techniques, the project aims to build a predictive model that can accurately identify customers likely to churn, enabling the bank to implement targeted retention strategies and ultimately improve customer loyalty and business performance.
+#### Data Dictionary
+
+| Column Name       | Description                                                        |
+|-------------------|--------------------------------------------------------------------|
+| RowNumber         | Row number                                                         |
+| CustomerId        | Unique identification key for different customers                  |
+| Surname           | Customer's last name                                               |
+| CreditScore       | Credit score of the customer                                       |
+| Geography         | Country of the customer                                            |
+| Age               | Age of the customer                                                |
+| Tenure            | Number of years with the bank                                      |
+| Balance           | Bank balance of the customer                                       |
+| NumOfProducts     | Number of products used by the customer                            |
+| HasCrCard         | Whether the customer holds a credit card (1: Yes, 0: No)           |
+| IsActiveMember    | Whether the customer is an active bank member (1: Yes, 0: No)      |
+| EstimatedSalary   | Customer's estimated salary                                        |
+| Exited            | Whether the customer left the bank (1: Yes, 0: No)                 |
+
+### Project Structure
+
+- `Customer Churn Prediction.ipynb`: Jupyter notebook containing the code and analysis.
+- `churn.csv`: Dataset used for training and evaluation (this needs to be added manually or loaded within the notebook).
+- `README.md`: Project description and setup instructions (this file).
+
+### Installation and Setup
+
+To run this project locally, follow the steps below:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/customer-churn-prediction.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd customer-churn-prediction
+    ```
+
+3. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+    **Note**: Ensure that `numpy`, `pandas`, `matplotlib`, and `seaborn` are installed.
+
+4. Open the Jupyter notebook:
+    ```bash
+    jupyter notebook Customer\ Churn\ Prediction.ipynb
+    ```
+
+### Data Preprocessing
+
+The data preprocessing steps include:
+- Handling missing values (if any).
+- Encoding categorical variables like `Geography` and `Gender`.
+- Feature scaling for variables like `CreditScore`, `Age`, `Balance`, etc.
+- Splitting the data into training and testing sets.
+
+### Model Building
+
+Several machine learning models are tested, including:
+- Logistic Regression
+- Decision Trees
+- Random Forest
+- Support Vector Machines (SVM)
+
+The performance of these models is evaluated based on accuracy, precision, recall, and F1-score.
+
+### Results
+
+The best-performing model is chosen based on evaluation metrics. Detailed visualizations, confusion matrices, and feature importance plots are included in the notebook to provide insights into model performance.
+
+### Conclusion
+
+This project demonstrates how customer churn prediction can be tackled using machine learning. With the right data, banks can take informed steps to reduce churn rates and retain customers.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contributions
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue if you find any bugs or have suggestions for improvements.
+
+## References
+
+- [Kaggle Churn Dataset](https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers?datasetId=797699&sortBy=voteCount)
+- Various machine learning libraries like `scikit-learn` and `pandas`.
